@@ -1,8 +1,5 @@
 size(800,600)
 background(0)
-fill(255)
-stroke(102)
-for y in range(20, height-15,20):
-    for x in range(20, width-15,20):
-        ellipse(x,y,4,4)
-        line(x,y,240,60)
+for y in range(32, height,8):
+    for x in range(12, width,15):
+        ellipse(x+y,y,16 - y/10.0, 16 - y/10.0)
